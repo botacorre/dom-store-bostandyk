@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Store - Bostandyk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Store Inventory</h1>
+
+    <!-- Форма добавления товара -->
+    <form id="add-product-form" novalidate>
+      <div class="form-group">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" placeholder="Apple">
+        <span class="error-message" id="error-name"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price ($):</label>
+        <input type="number" id="price" placeholder="10">
+        <span class="error-message" id="error-price"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" placeholder="5">
+        <span class="error-message" id="error-qty"></span>
+      </div>
+
+      <button type="submit">Add Product</button>
+    </form>
+
+    <!-- Таблица товаров -->
+    <table id="products-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="products-list">
+        <!-- Товары рендерятся через JS -->
+      </tbody>
+    </table>
+
+    <!-- Живой Total -->
+    <div class="total-container">
+      Total Price: $<span id="total-price">0</span>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
