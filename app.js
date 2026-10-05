@@ -9,7 +9,7 @@ const form = document.getElementById('add-product-form');
 const productsList = document.getElementById('products-list');
 const totalPriceEl = document.getElementById('total-price');
 
-// 1. Рендеринг списка товаров
+
 function render() {
   productsList.innerHTML = '';
   
@@ -31,7 +31,6 @@ function render() {
   totalPriceEl.textContent = store.total;
 }
 
-// 2. Валидация формы и добавление товара
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -78,7 +77,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// 3. Делегирование событий на таблицу (Delete & Change Qty)
+
 productsList.addEventListener('click', (e) => {
   if (e.target.classList.contains('btn-delete')) {
     const name = e.target.getAttribute('data-name');
@@ -98,5 +97,5 @@ productsList.addEventListener('input', (e) => {
   }
 });
 
-// Первоначальный рендер
+
 render();
