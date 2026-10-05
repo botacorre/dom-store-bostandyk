@@ -24,6 +24,7 @@ In this project, I handled `submit`, `click`, and `input` events:
 ## Page Screenshot
 
 ![DOM Store Page](./screenshot-app.png)
+![DOM Store Page](./screenshot-app2.png)
 
 ---
 
