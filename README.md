@@ -31,4 +31,3 @@ In this project, I handled `submit`, `click`, and `input` events:
 
 During the development of this project, **Gemini AI** was utilized:
 * **UI Structure & Event Delegation:** Assisted in setting up clean event delegation on table elements.
-* **Documentation:** Helped structure and formulate technical explanations in English for this `README.md`.
