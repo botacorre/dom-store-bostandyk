@@ -1,7 +1,6 @@
 # DOM Store Application — Lab 5
 
 - **Author:** Akbota Bostandyk (IT1-2305)
-- **Repository:** https://github.com/botacorre/dom-store-bostandyk
 
 ---
 
